@@ -13,7 +13,7 @@
                 <img src="./images/menu.svg" alt="Menu Hamburguer" class="h-10">
             </button>
             <img src="./images/thebatman.svg" alt="Logo Batman" class="mx-auto h-10 sm:mx-0">
-            <ul id="nav-menu" class="absolute top-0 hidden bg-amber-300 flex-col justify-around text-center text-2xl font-bold h-dvh w-dvw text-black sm:static sm:bg-transparent sm:text-amber-300 sm:flex sm:h-auto sm:w-1/2 sm:flex-row sm:justify-center sm:text-sm sm:text-left sm:gap-5">
+            <ul id="nav-menu" class="absolute top-0 hidden bg-amber-300 flex-col justify-between text-center text-2xl font-bold ml-auto h-dvh w-dvw text-black sm:static sm:bg-transparent sm:text-amber-300 sm:flex sm:h-auto sm:w-1/2 sm:flex-row sm:justify-end  sm:text-sm sm:text-left sm:gap-5 sm:px-0">
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
@@ -26,23 +26,33 @@
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
-                <li>
-                    <button class="sm:hidden">
+                <li class="sm:hidden">
+                    <button>
                         <img src="./images/closelogo.svg" alt="Close Logo" class="h-10 cursor-pointer">
                     </button>
                 </li>
             </ul>
         </nav>
-
-        <section class="flex flex-col p-5 bg-amber-300 items-center justify-center">
-            <img src="./images/BatmanFoto.jpg" alt="Foto Perfil Batman" class="rounded-full h-50 w-50 object-cover">
-            <div>
-            <h1 class="text-4xl font-bold">Hello, I'm Batman!</h1>
-            <p>I am the shadow that watches over Gotham. I carry the weight of the city on my shoulders, facing fear with fear itself. The night is my ally, and my purpose is clear: to prevent others from suffering the pain I have known. I am not a hero. I am vengeance. I am the night.</p>
-            <img src="./images/linkedin.svg" alt="Logo Linkedin" class="h-8 w-8 mt-5">
-        </div>
-        </section>
     </header>
+
+    <section class="bg-amber-300 p-5 sm:flex sm:h-90 sm:flex-row sm:px-24">
+        <article class="max-w-50 mx-auto sm:mx-0 sm:ml-0 flex items-center sm:max-w-70">
+            <img src="./images/BatmanFoto.jpg" alt="Foto Perfil Batman" class="rounded-full max-w-50 sm:max-w-70">
+        </article>
+        <div class="mx-auto my-4 flex flex-col sm:ml-2 sm:text-left sm:justify-center sm:pl-5 sm:p-0">
+            <h1 class="text-4xl font-black text-center sm:text-left">Hello, I'm Batman!</h1>
+            <p class="text-justify">I am the shadow that watches over Gotham. I carry the weight of the city on my shoulders, facing fear with fear itself. The night is my ally, and my purpose is clear: to prevent others from suffering the pain I have known. I am not a hero. I am vengeance. I am the night.</p>
+            <ul class="flex gap-2 pb-5">
+                <li>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Batman"><img src="./images/linkedin.svg" alt="Logo Linkedin" class="h-8 w-8 mt-5"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/ecavalcanti93/BatmanPortfolio_Tailwind_Study"><img src="./images/github.svg" alt="Logo Github" class="h-8 w-8 mt-5"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
     <script src="./scripts/navgation.js"></script>
 </body>
 </html>
