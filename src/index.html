@@ -9,7 +9,7 @@
   </head>
   <body class="h-dvh bg-black">
     <header id="header">
-      <nav class="sticky top-0 flex h-16 items-center justify-between sm:px-24">
+      <nav class=" max-w-screen-2xl mx-auto sticky top-0 flex h-16 items-center justify-between sm:px-24">
         <button id="menu-button" class="absolute left-2 sm:hidden">
           <img src="./images/menu.svg" alt="Menu Hamburguer" class="h-10" />
         </button>
@@ -29,10 +29,10 @@
             <a href="#villains">Villains</a>
           </li>
           <li>
-            <a href="#about-me">Map</a>
+            <a href="#about-me">Reviews</a>
           </li>
           <li>
-            <a href="#about-me">About Me</a>
+            <a href="#about-me">Contact</a>
           </li>
           <li class="sm:hidden">
             <button>
@@ -48,6 +48,7 @@
     </header>
 
     <section class="bg-amber-300 p-5 sm:flex sm:h-90 sm:flex-row sm:px-24">
+      <div class=" max-w-screen-xl mx-auto flex flex-col sm:flex-row">
       <article
         class="mx-auto flex max-w-50 items-center sm:mx-0 sm:ml-0 sm:max-w-70"
       >
@@ -90,9 +91,10 @@
           </li>
         </ul>
       </div>
+      </div>
     </section>
 
-    <section class="py-10" id="about-me">
+    <section class="py-10  max-w-screen-2xl mx-auto" id="about-me">
       <article
         class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
       >
@@ -138,7 +140,7 @@
       </article>
     </section>
 
-    <section class="pb-10" id="villains">
+    <section class="pb-10 max-w-screen-2xl mx-auto " id="villains">
       <div
         class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25"
       >
@@ -200,7 +202,62 @@
       </div>
     </section>
 
+    <section class="bg-amber-300">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contact Me</h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-black sm:text-xl">Did you see any suspicious activity in Gotham City? Let me know!</p>
+          <form action="#" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-black">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-black-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@batman.com" required>
+              </div>
+              <div>
+                  <label for="subject" class="block mb-2 text-sm font-medium text-black">Subject</label>
+                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let me know how I can help you" required>
+              </div>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-black">Your message</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit" class=" cursor-pointer bg-black py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 hover:bg-amber-50 hover:text-black">Send message</button>
+          </form>
+      </div>
+    </section>
+    
+
+<footer class=" bg-black rounded-lg shadow-sm m-4">
+  <div class=" w-full max-w-screen-2xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="./images/flavlogo.png" class="h-10" alt="Batman Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Batman</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-amber-400 sm:mb-0 ">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-amber-400 sm:mx-auto lg:my-8" />
+<span class="text-center block text-sm text-amber-400 sm:text-center">
+  &copy; <span id="year"></span> 
+  <a href="#" class=" hover:underline">Batman™</a>. All Rights Reserved.
+</span>
+  </div>
+</footer>
+
+
     <script src="./scripts/navgation.js"></script>
     <script type="module" src="./scripts/template.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
