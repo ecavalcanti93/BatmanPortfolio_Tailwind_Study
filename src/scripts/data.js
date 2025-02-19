@@ -35,4 +35,13 @@ export const villains = [
         description:"Edward Nigma is known for his intelligence and for leaving riddles and clues as his method of crime.",
         link:"https://batman.fandom.com/wiki/The_Riddler",
     },
+    {
+        title:"Bane",
+        image:{
+            src:"./images/Bane.jpg",
+            alt:"Bane"
+        },
+        description:"Bane has abnormal physical strength as a result of having undergone experiments involving a derivative of the drug Venom.",
+        link:"https://batman.fandom.com/wiki/Bane",
+    },
 ];
