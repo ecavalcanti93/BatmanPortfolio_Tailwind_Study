@@ -938,6 +938,9 @@
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
   }
+  .pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -1229,6 +1232,11 @@
       padding-inline: calc(var(--spacing) * 24);
     }
   }
+  .sm\:pr-20 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 20);
+    }
+  }
   .sm\:pr-25 {
     @media (width >= 40rem) {
       padding-right: calc(var(--spacing) * 25);
@@ -1237,6 +1245,11 @@
   .sm\:pl-5 {
     @media (width >= 40rem) {
       padding-left: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:pl-20 {
+    @media (width >= 40rem) {
+      padding-left: calc(var(--spacing) * 20);
     }
   }
   .sm\:pl-25 {

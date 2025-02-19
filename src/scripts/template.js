@@ -1,4 +1,4 @@
-import { villains } from "./data.js";
+import { villains, reviews } from "./data.js";
 
 const templateVillains = document.querySelector('[data-template="villains-card"]');
 
@@ -24,4 +24,22 @@ villains.forEach(villain => {
     link3.href = villain.link;
 
     villainsUl.appendChild(card);
+});
+
+const templateReview= document.querySelector('[data-template="review-card"]');
+const reviewsUl = document.querySelector("#reviews ul");
+
+reviews.forEach(review => {
+    const card = templateReview.content.cloneNode(true);
+    const image = card.querySelector("img");
+    const name = card.querySelector("p");
+    const reviewText = card.querySelector("blockquote");
+
+    image.src = review.image.src;
+    image.alt = review.image.alt;
+
+    name.textContent = review.name;
+    reviewText.textContent = review.reviewText
+
+    reviewsUl.appendChild(card);
 });

@@ -29,10 +29,10 @@
             <a href="#villains">Villains</a>
           </li>
           <li>
-            <a href="#about-me">Reviews</a>
+            <a href="#reviews">Reviews</a>
           </li>
           <li>
-            <a href="#about-me">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li class="sm:hidden">
             <button>
@@ -96,7 +96,7 @@
 
     <section class="py-10  max-w-screen-2xl mx-auto" id="about-me">
       <article
-        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
+        class="mx-auto my-4 pb-0 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
       >
         <h3 class="text-4xl font-bold">About Me</h3>
         <p>
@@ -141,10 +141,10 @@
     </section>
 
     <section class="pb-10 max-w-screen-2xl mx-auto" id="villains">
+      <h3 class="mx-auto my-4 text-4xl font-bold mb-10 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify">Captured Villains</h3>
       <div
-        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25"
+        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-20 sm:pl-20"
       >
-        <h3 class="text-4xl font-bold pb-5">Captured Villains</h3>
         <ul class="flex flex-wrap justify-between gap-10 sm:justify-around">
           <template data-template="villains-card">
           <li>
@@ -202,24 +202,26 @@
       </div>
     </section>
 
-    <section class="pb-10 max-w-screen-2xl mx-auto" id="reviwes">
+    <section class="pb-10 max-w-screen-2xl mx-auto" id="reviews">
       <div
       class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25"
     >
       <h3 class="text-4xl font-bold pb-5 text-amber-300">Reviews</h3>
       <ul>
+        <template data-template="review-card">
         <li class="flex flex-col gap-4 p-4 mb-10 rounded-lg bg-gray-900 shadow-sm text-gray-700 dark:text-gray-400 sm:flex-row sm:items-center">
-          <img class="size-35 rounded-full mx-auto sm:mx-0" src="./images/Gordon.jpg" alt="Perfil Gordon">
+          <img class="size-35 rounded-full mx-auto sm:mx-0" src="" alt="">
           <div>
-          <blockquote class="mb-4 italic">Once again, Gotham owes you. Your actions were crucial in preventing chaos and capturing the Joker without civilian casualties. I still wish you operated within the law, but I know that’s not your way. Stay vigilant. Gotham never sleeps.</blockquote>
-          <p>- Comm'r. Gordon</p>
+          <blockquote class="mb-4 italic"></blockquote>
+          <p></p>
         </div>
         </li>
+      </template>
       </ul>
     </div>
     </section>
 
-    <section class="bg-amber-300">
+    <section id="contact" class="bg-amber-300">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contact Me</h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-black sm:text-xl">Did you see any suspicious activity in Gotham City? Let me know!</p>

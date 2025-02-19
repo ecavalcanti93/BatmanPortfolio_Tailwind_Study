@@ -45,3 +45,30 @@ export const villains = [
         link:"https://batman.fandom.com/wiki/Bane",
     },
 ];
+
+export const reviews = [
+    {
+        name:"- Comm'r Gordon",
+        image: {
+            src:"./images/Gordon.jpg",
+            atl:"Comm'r Gordon",
+        },
+        reviewText:"Once again, Gotham owes you. Your actions were crucial in preventing chaos and capturing the Joker without civilian casualties. I still wish you operated within the law, but I know that’s not your way. Stay vigilant. Gotham never sleeps."
+    },
+    {
+        name:"- Robbin",
+        image: {
+            src:"./images/Robin.jpg",
+            atl:"Robin",
+        },
+        reviewText:"You, as always, made the impossible look easy. The way you handled the Joker without anyone getting hurt was impressive. Either way, I’m ready for the next one. Just don’t forget that even the Dark Knight needs someone by his side."
+    },
+    {
+        name:"- Alfred",
+        image: {
+            src:"./images/Alfred.jpg",
+            atl:"Alfred",
+        },
+        reviewText:"Once again, your skill and determination have proven unmatched. The way you handled the Joker without any casualties was nothing short of extraordinary. However, allow me to remind you that even the greatest warriors need rest. The Batcave is in order, and a hot cup of tea awaits your return."
+    },
+]
