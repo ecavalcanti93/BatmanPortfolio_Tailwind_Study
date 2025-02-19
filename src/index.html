@@ -7,16 +7,19 @@
     <link rel="icon" href="./images/flavlogo.png" />
     <title>Batman's Portfolio</title>
   </head>
-  <body class="h-dvh bg-black">
+  <body class="bg-black">
     <header id="header">
-      <nav class=" max-w-screen-2xl mx-auto sticky top-0 flex h-16 items-center justify-between sm:px-24">
+      <nav
+        class="sticky top-0 mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-24"
+      >
         <button id="menu-button" class="absolute left-2 sm:hidden">
           <img src="./images/menu.svg" alt="Menu Hamburguer" class="h-10" />
         </button>
         <img
           src="./images/thebatman.svg"
           alt="Logo Batman"
-          class="mx-auto h-10 sm:mx-0"
+          class="mx-auto h-10 cursor-pointer sm:mx-0"
+          id="main-title"
         />
         <ul
           id="nav-menu"
@@ -48,55 +51,55 @@
     </header>
 
     <section class="bg-amber-300 p-5 sm:flex sm:h-90 sm:flex-row sm:px-24">
-      <div class=" max-w-screen-xl mx-auto flex flex-col sm:flex-row">
-      <article
-        class="mx-auto flex max-w-50 items-center sm:mx-0 sm:ml-0 sm:max-w-70"
-      >
-        <img
-          src="./images/BatmanFoto.jpg"
-          alt="Foto Perfil Batman"
-          class="max-w-50 rounded-full sm:max-w-70"
-        />
-      </article>
-      <div
-        class="mx-auto my-4 flex flex-col sm:ml-2 sm:justify-center sm:p-0 sm:pl-5 sm:text-left"
-      >
-        <h1 class="text-center text-4xl font-black sm:text-left">
-          Hello, I'm Batman!
-        </h1>
-        <p class="text-justify">
-          I am the shadow that watches over Gotham. I carry the weight of the
-          city on my shoulders, facing fear with fear itself. The night is my
-          ally, and my purpose is clear: to prevent others from suffering the
-          pain I have known. I am not a hero. I am vengeance. I am the night.
-        </p>
-        <ul class="flex gap-2 pb-5">
-          <li>
-            <a target="_blank" href="https://en.wikipedia.org/wiki/Batman"
-              ><img
-                src="./images/linkedin.svg"
-                alt="Logo Linkedin"
-                class="mt-5 h-8 w-8"
-            /></a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/ecavalcanti93/BatmanPortfolio_Tailwind_Study"
-              ><img
-                src="./images/github.svg"
-                alt="Logo Github"
-                class="mt-5 h-8 w-8"
-            /></a>
-          </li>
-        </ul>
-      </div>
+      <div class="mx-auto flex max-w-screen-xl flex-col sm:flex-row">
+        <article
+          class="mx-auto flex max-w-50 items-center sm:mx-0 sm:ml-0 sm:max-w-70"
+        >
+          <img
+            src="./images/BatmanFoto.jpg"
+            alt="Foto Perfil Batman"
+            class="max-w-50 rounded-full sm:max-w-70"
+          />
+        </article>
+        <div
+          class="mx-auto my-4 flex flex-col sm:ml-2 sm:justify-center sm:p-0 sm:pl-5 sm:text-left"
+        >
+          <h1 class="text-center text-4xl font-black sm:text-left">
+            Hello, I'm Batman!
+          </h1>
+          <p class="text-justify">
+            I am the shadow that watches over Gotham. I carry the weight of the
+            city on my shoulders, facing fear with fear itself. The night is my
+            ally, and my purpose is clear: to prevent others from suffering the
+            pain I have known. I am not a hero. I am vengeance. I am the night.
+          </p>
+          <ul class="flex gap-2 pb-5">
+            <li>
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Batman"
+                ><img
+                  src="./images/linkedin.svg"
+                  alt="Logo Linkedin"
+                  class="mt-5 h-8 w-8"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/ecavalcanti93/BatmanPortfolio_Tailwind_Study"
+                ><img
+                  src="./images/github.svg"
+                  alt="Logo Github"
+                  class="mt-5 h-8 w-8"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="py-10  max-w-screen-2xl mx-auto" id="about-me">
+    <section class="mx-auto max-w-screen-2xl py-10" id="about-me">
       <article
-        class="mx-auto my-4 pb-0 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
+        class="mx-auto my-4 flex flex-col gap-5 pr-5 pb-0 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
       >
         <h3 class="text-4xl font-bold">About Me</h3>
         <p>
@@ -140,141 +143,199 @@
       </article>
     </section>
 
-    <section class="pb-10 max-w-screen-2xl mx-auto" id="villains">
-      <h3 class="mx-auto my-4 text-4xl font-bold mb-10 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify">Captured Villains</h3>
-      <div
-        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-20 sm:pl-20"
+    <section class="mx-auto max-w-screen-2xl pb-10" id="villains">
+      <h3
+        class="mx-auto my-4 mb-10 flex flex-col gap-5 pr-5 pl-5 text-left text-4xl font-bold text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25 sm:text-justify"
       >
-        <ul class="flex flex-wrap justify-between gap-10 sm:justify-around">
+        Captured Villains
+      </h3>
+      <div
+        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-24 sm:pl-25"
+      >
+        <ul class="flex flex-wrap justify-around gap-10">
           <template data-template="villains-card">
-          <li>
-            <div class="max-w-sm rounded-lg bg-gray-900 shadow-sm">
-              <a
-                href="https://batman.fandom.com/wiki/The_Penguin"
-                target="_blank"
-              >
-                <img
-                  class="rounded-t-lg object-cover"
-                  src="./images/penguin2.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
+            <li>
+              <div class="max-w-sm rounded-lg bg-gray-900 shadow-sm">
                 <a
                   href="https://batman.fandom.com/wiki/The_Penguin"
                   target="_blank"
                 >
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-                    The Penguin
-                  </h5>
+                  <img
+                    class="rounded-t-lg object-cover"
+                    src="./images/penguin2.jpg"
+                    alt=""
+                  />
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Oswald Chesterfield Cobblepot is a Gotham City mobster who
-                  fancies himself the number one "Gentleman of Crime".
-                </p>
-                <a
-                  href="https://batman.fandom.com/wiki/The_Penguin"
-                  target="_blank"
-                  class="inline-flex items-center rounded-lg bg-amber-300 px-3 py-2 text-center text-sm font-medium text-black hover:bg-amber-400"
-                >
-                  Read more
-                  <svg
-                    class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
+                <div class="p-5">
+                  <a
+                    href="https://batman.fandom.com/wiki/The_Penguin"
+                    target="_blank"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      The Penguin
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Oswald Chesterfield Cobblepot is a Gotham City mobster who
+                    fancies himself the number one "Gentleman of Crime".
+                  </p>
+                  <a
+                    href="https://batman.fandom.com/wiki/The_Penguin"
+                    target="_blank"
+                    class="inline-flex items-center rounded-lg bg-amber-300 px-3 py-2 text-center text-sm font-medium text-black hover:bg-amber-400"
+                  >
+                    Read more
+                    <svg
+                      class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
-            </div>
-          </li>
-        </template>
+            </li>
+          </template>
         </ul>
       </div>
     </section>
 
-    <section class="pb-10 max-w-screen-2xl mx-auto" id="reviews">
+    <section class="mx-auto max-w-screen-2xl pb-10" id="reviews">
       <div
-      class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25"
-    >
-      <h3 class="text-4xl font-bold pb-5 text-amber-300">Reviews</h3>
-      <ul>
-        <template data-template="review-card">
-        <li class="flex flex-col gap-4 p-4 mb-10 rounded-lg bg-gray-900 shadow-sm text-gray-700 dark:text-gray-400 sm:flex-row sm:items-center">
-          <img class="size-35 rounded-full mx-auto sm:mx-0" src="" alt="">
-          <div>
-          <blockquote class="mb-4 italic"></blockquote>
-          <p></p>
-        </div>
-        </li>
-      </template>
-      </ul>
-    </div>
+        class="mx-auto my-4 flex flex-col gap-5 pr-5 pl-5 text-left text-amber-300 sm:ml-2 sm:justify-center sm:p-0 sm:pr-25 sm:pl-25"
+      >
+        <h3 class="pb-5 text-4xl font-bold text-amber-300">Reviews</h3>
+        <ul>
+          <template data-template="review-card">
+            <li
+              class="mb-10 flex flex-col gap-4 rounded-lg bg-gray-900 p-4 text-gray-700 shadow-sm sm:flex-row sm:items-center dark:text-gray-400"
+            >
+              <img class="mx-auto size-35 rounded-full sm:mx-0" src="" alt="" />
+              <div>
+                <blockquote class="mb-4 italic"></blockquote>
+                <p></p>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
     </section>
 
     <section id="contact" class="bg-amber-300">
-      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">Contact Me</h2>
-          <p class="mb-8 lg:mb-16 font-light text-center text-black sm:text-xl">Did you see any suspicious activity in Gotham City? Let me know!</p>
-          <form action="#" class="space-y-8">
-              <div>
-                  <label for="email" class="block mb-2 text-sm font-medium text-black">Your email</label>
-                  <input type="email" id="email" class="shadow-sm bg-black-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@batman.com" required>
-              </div>
-              <div>
-                  <label for="subject" class="block mb-2 text-sm font-medium text-black">Subject</label>
-                  <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let me know how I can help you" required>
-              </div>
-              <div class="sm:col-span-2">
-                  <label for="message" class="block mb-2 text-sm font-medium text-black">Your message</label>
-                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-black dark:border-black dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-              </div>
-              <button type="submit" class=" cursor-pointer bg-black py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 hover:bg-amber-50 hover:text-black">Send message</button>
-          </form>
+      <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-16">
+        <h2
+          class="mb-4 text-center text-4xl font-extrabold tracking-tight text-black"
+        >
+          Contact Me
+        </h2>
+        <p class="mb-8 text-center font-light text-black sm:text-xl lg:mb-16">
+          Did you see any suspicious activity in Gotham City? Let me know!
+        </p>
+        <form action="#" class="space-y-8">
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium text-black"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="bg-black-50 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-black p-2.5 text-sm text-gray-900 shadow-sm dark:border-black dark:bg-black dark:text-white dark:placeholder-gray-400"
+              placeholder="name@batman.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="mb-2 block text-sm font-medium text-black"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-black dark:bg-black dark:text-white dark:placeholder-gray-400"
+              placeholder="Let me know how I can help you"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="mb-2 block text-sm font-medium text-black"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-black dark:bg-black dark:text-white dark:placeholder-gray-400"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 cursor-pointer rounded-lg bg-black px-5 py-3 text-center text-sm font-medium text-white hover:bg-amber-50 hover:text-black focus:ring-4 focus:outline-none sm:w-fit"
+          >
+            Send message
+          </button>
+        </form>
       </div>
     </section>
 
-<footer class=" bg-black rounded-lg shadow-sm m-4">
-  <div class=" w-full max-w-screen-2xl mx-auto p-4 md:py-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <img src="./images/flavlogo.png" class="h-10" alt="Batman Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Batman</span>
+    <footer class="m-4 rounded-lg bg-black shadow-sm">
+      <div class="mx-auto w-full max-w-screen-2xl p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="#"
+            class="mb-4 flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse"
+          >
+            <img src="./images/flavlogo.png" class="h-10" alt="Batman Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Batman</span
+            >
           </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-amber-400 sm:mb-0 ">
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline">Contact</a>
-              </li>
+          <ul
+            class="mb-6 flex flex-wrap items-center text-sm font-medium text-amber-400 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="me-4 hover:underline md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
           </ul>
+        </div>
+        <hr class="my-6 border-amber-400 sm:mx-auto lg:my-8" />
+        <span class="block text-center text-sm text-amber-400 sm:text-center">
+          &copy; <span id="year"></span>
+          <a href="#" class="hover:underline">Batman™</a>. All Rights Reserved.
+        </span>
       </div>
-      <hr class="my-6 border-amber-400 sm:mx-auto lg:my-8" />
-<span class="text-center block text-sm text-amber-400 sm:text-center">
-  &copy; <span id="year"></span> 
-  <a href="#" class=" hover:underline">Batman™</a>. All Rights Reserved.
-</span>
-  </div>
-</footer>
+    </footer>
 
     <script src="./scripts/navgation.js"></script>
     <script type="module" src="./scripts/template.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#nav-menu");
-const navList = document.querySelectorAll("#nav-menu li")
+const navList = document.querySelectorAll("#nav-menu li");
+const mainTitle = document.querySelector("#main-title");
 
 menuButton.addEventListener("click", () =>{
     navMenu.classList.remove("hidden", "animate-slide-out");
@@ -20,6 +21,10 @@ navMenu.addEventListener("animationend", (e) => {
     navMenu.classList.add("hidden");
     navMenu.classList.remove("flex");
 });
+
+mainTitle.addEventListener("click", () => {
+    window.scrollTo({top: 0, behavior:"smooth"})
+})
 
 window.addEventListener("resize", () =>{
     if(window.innerWidth >= 640){

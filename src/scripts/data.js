@@ -44,6 +44,15 @@ export const villains = [
         description:"Bane has abnormal physical strength as a result of having undergone experiments involving a derivative of the drug Venom.",
         link:"https://batman.fandom.com/wiki/Bane",
     },
+    {
+        title:"Scarecrow",
+        image:{
+            src:"./images/Scarecrow.jpg",
+            alt:"Scarecrow"
+        },
+        description:"Dr. Jonathan Crane is a deranged ex-psychology professor who exploits his adversaries' fears using drugs and psychological tactics..",
+        link:"https://batman.fandom.com/wiki/Scarecrow",
+    },
 ];
 
 export const reviews = [
